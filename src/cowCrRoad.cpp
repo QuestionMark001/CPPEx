@@ -5,6 +5,7 @@ author:白-槿
 #include <iostream>
 #include <cstring>
 #include <algorithm>
+#include <unordered_map>
 #define x first
 #define y second
 using namespace std;
