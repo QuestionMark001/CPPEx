@@ -16,7 +16,7 @@ bool cmp(PII a,PII b){
     return a.x<b.x;
 }
   unordered_map<int,int>mp_up,mp_down;
-int main{
+int main(){
     int n;
     cin>>n;
     PII up[maxn],down[maxn];
@@ -32,14 +32,14 @@ int main{
     }
     sort(up,up+n,cmp),  sort(down,down+n,cmp);;
     int ans=0;
-    int max_up =-0x3f3f3f3f,int max_down =-0x3f3f3f3f;
+    int max_up =-0x3f3f3f3f;int max_down =-0x3f3f3f3f;
     for (int i = 0; i < n; i ++ ){
-        if(up[i].y!==down[i].y){
+        if(up[i].y!=down[i].y){
             max_down=max(max_down,mp_up[up[i].x]);
             max_up=max(max_up,mp_down[down[i].x]);
             
         }
-        if(up[i].y==down[i].y&&(down[i]x>max_down&&up[i].x>max_up)){
+        if(up[i].y==down[i].y&&(down[i].x>max_down&&up[i].x>max_up)){
             ans++;
             
         }
