@@ -47,3 +47,6 @@ int main(){
     cout << ans <<endl;
     
 }
+// 此程序编译通过，但无法在Linux下输出结果。
+// g++ version: 10.2.1
+// clang++ version: 11.0.1-2
