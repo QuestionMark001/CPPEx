@@ -9,7 +9,7 @@ author:白-槿
 #define x first
 #define y second
 using namespace std;
-const int maxn = 1e5+10;
+const int maxn = (int) (1e5+10); // 强制转换为int
 int ans=0;
 typedef pair<int, int> PII;
 bool cmp(PII a,PII b){
